@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Land Lawn Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .about-section {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: #27ae60;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .team-member {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #333333, #222222);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Our Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-content">
+        <h1>About The Land Lawn Care</h1>
+        
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>Founded by two ambitious teenagers, The Land Lawn Care was born from a passion for outdoor work and a desire to serve our community. What started as a summer project has grown into a professional landscaping service that combines youthful energy with exceptional dedication.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3>Noah Sobel</h3>
+                <p>A passionate landscaper with an eye for detail. Started mowing lawns at age 12 and has since developed expertise in lawn care and garden maintenance.</p>
+            </div>
+            <div class="team-member">
+                <h3>Jacob Pfenning</h3>
+                <p>Brings creative vision and technical skills to the team. Specialized in garden design and sustainable landscaping practices.</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>To provide professional, reliable, and affordable landscaping services while proving that age is just a number when it comes to delivering quality work. We're committed to making every yard we touch more beautiful and maintaining long-lasting relationships with our clients.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 The Land Lawn Care. All rights reserved.</p>
+        <p>Serving [Aurora, OH]</p>
+    </footer>
+</body>
+</html> 

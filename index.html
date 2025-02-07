@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Images/LawnLogo.jpg">
+    <title>The Land Lawn Care - Professional Landscaping Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1558904541-efa843a96f01?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .about {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(145deg, #27ae60, #219a52);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #333333, #222222);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Images/LawnLogo.jpg" alt="The Land Lawn Care Logo" class="logo">
+            <div class="header-text">
+                <h1>The Land Lawn Care</h1>
+                <p>Professional Landscaping Services</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Our Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Founded by two ambitious teenagers, The Land Lawn Care brings fresh energy and dedication to professional landscaping. We may be young, but our commitment to quality service is mature beyond our years.</p>
+        </div>
+    </section>
+
+    <section class="featured-images section">
+        <h2>Featured Work</h2>
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="Images/Herrington.JPG" alt="Lawn Care Example 1">
+                <div class="image-overlay">
+                    <p>Professional Mowing</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="Images/Edging.jpg" alt="Lawn Care Example 2">
+                <div class="image-overlay">
+                    <p>Expert Edging</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="Images/FinalPro.JPG" alt="Lawn Care Example 3">
+                <div class="image-overlay">
+                    <p>Beautiful Results</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-2">
+            <a href="portfolio.html" class="button">View More Work</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section cta">
+        <h2>Ready to Transform Your Lawn?</h2>
+        <p class="cta-text">Contact us today for a free quote!</p>
+        <a href="tel:+14406656971" class="button">Call Us: (440) 665-6971</a>
+        <br>
+        <a href="mailto:contact@jacobpfenning75@gmail.com" class="button">Email Us</a>
+    </section>
+
+    <footer>
+        <p>© 2024 The Land Lawn Care. All rights reserved.</p>
+        <p>Serving [Aurora, OH]</p>
+    </footer>
+</body>
+</html>

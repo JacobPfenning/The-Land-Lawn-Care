@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - The Land Lawn Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .portfolio-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            color: #27ae60;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .project-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .video-section {
+            margin-top: 4rem;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-card video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #333333, #222222);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Our Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="portfolio-content">
+        <h1>Our Work</h1>
+        
+        <h2>Before & After Transformations</h2>
+        <div class="gallery">
+            <div class="project-card before-after">
+                <div class="image-comparison">
+                    <div class="before">
+                        <img src="Images/BefWeeds.jpg" alt="Before Transformation">
+                        <span class="label">Before</span>
+                    </div>
+                    <div class="after">
+                        <img src="Images/AftWeeds2.jpg" alt="After Transformation">
+                        <span class="label">After</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Complete Yard Makeover</h3>
+                    <p>A complete transformation of an overgrown backyard into a well-maintained space.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="path-to-your-image2.jpg" alt="Lawn Transformation 2">
+                <div class="project-info">
+                    <h3>Garden Edge Cleanup</h3>
+                    <p>Professional edging and trimming bringing clean lines to this garden.</p>
+                </div>
+            </div>
+            <div class="project-card before-after">
+                <div class="image-comparison">
+                    <div class="before">
+                        <img src="Images/BefFall.JPG" alt="Before Transformation">
+                        <span class="label">Before</span>
+                    </div>
+                    <div class="after">
+                        <img src="Images/AftFall.JPG" alt="After Transformation">
+                        <span class="label">After</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Seasonal Cleanup</h3>
+                    <p>Fall cleanup and lawn preparation for winter.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Watch Us in Action</h2>
+            <div class="video-container">
+                <!-- Replace with your actual videos -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="Images/Mulching.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Lawn Mowing Time-Lapse</h3>
+                </div>
+                <div class="video-card">
+                    <video controls>
+                        <source src="path-to-your-video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Edge Trimming Technique</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 The Land Lawn Care. All rights reserved.</p>
+        <p>Serving [Aurora, OH]</p>
+    </footer>
+</body>
+</html> 

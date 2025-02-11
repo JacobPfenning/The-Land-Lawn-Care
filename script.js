@@ -1,8 +1,3 @@
-// Force HTTPS
-if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
-
 // Store form submissions
 let submissions = [];
 

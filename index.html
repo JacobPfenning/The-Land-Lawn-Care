@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="shortcut icon" type="x-icon" href="Images/LawnLogo.jpg">
     <title>The Land Lawn Care - Professional Landscaping Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -178,6 +179,27 @@
     <section id="contact" class="section cta">
         <h2>Ready to Transform Your Lawn?</h2>
         <p class="cta-text">Contact us today for a free quote!</p>
+        
+        <div class="contact-form-container">
+            <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </div>
+                <button type="submit" class="button">Get Quote</button>
+            </form>
+            <div id="successMessage" class="success-message hidden">
+                Thank you! We will contact you soon
+            </div>
+        </div>
+
+        <div class="contact-divider">or</div>
+        
         <a href="tel:+14406656971" class="button">Call Us: (440) 665-6971</a>
         <br>
         <a href="mailto:contact@jacobpfenning@thelandlawncare.com" class="button">Email Us</a>
@@ -185,7 +207,14 @@
 
     <footer>
         <p>© 2024 The Land Lawn Care. All rights reserved.</p>
-        <p>Serving [Aurora, OH]</p>
+        <p>Serving Aurora, OH</p>
     </footer>
+
+    <!-- Admin Export Button - Add some styling to hide it from regular users -->
+    <div class="admin-panel" style="position: fixed; bottom: 20px; right: 20px; opacity: 0.3;">
+        <button onclick="exportToCSV()" class="button">Export Submissions</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
